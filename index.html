@@ -1,1 +1,99 @@
 
+diff --git a/index.html b/index.html
+index 3e2b59f621190a533988b6044af3f11a0ec7316f..060c9294d4b5d69025d23422f65dfb7f40aad954 100644
+--- a/index.html
++++ b/index.html
+@@ -1,6 +1,86 @@
+-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>TIttle</title><meta name="author"><link rel="shortcut icon" href="/img/favicon.png"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="TIttle" type="application/atom+xml">
+-</head><body><header id="page_header"><div class="header_wrap"><div id="blog_name"><a class="blog_title" id="site-name" href="/">TIttle</a></div><button class="menus_icon"><div class="navicon"></div></button><ul class="menus_items"><li class="menus_item"><a class="site-page" href="/Publications"> Publications</a></li><li class="menus_item"><a class="site-page" href="/"> About</a></li><li class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://blog"> Blog</a></li><li class="menus_item"><a class="site-page" href="/test/"> TEST</a></li><li class="menus_item"><a class="site-page" href="/person/"> 个人简历</a></li></ul></div></header><main id="page_main"><div class="side-card sticky"><div class="card-wrap" itemscope itemtype="http://schema.org/Person"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/profile.png'" alt="avatar"></div><div class="author-discrip"><h3>鹿安东</h3><p class="author-bio">多模态目标跟踪、跨模态搜索</p></div><div class="author-links"><button class="btn m-social-links">Links</button><ul class="social-icons"><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-stack-overflow" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-weibo" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-weixin" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fab fa-qq" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i></a></li><li><a class="social-icon" href="/" target="_blank"><i class="fas fa-rss" aria-hidden="true"></i></a></li></ul><ul class="social-links"><li><a class="e-social-link" href="/" target="_blank"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a></li><li><a class="e-social-link" href="/" target="_blank"><i class="fab fa-orcid" aria-hidden="true"></i><span>ORCID</span></a></li></ul></div><a class="cv-links" href="/attaches/CV.pdf" target="_blank"><i class="fas fa-file-pdf" aria-hidden="true"><span>My Detail CV.</span></i></a></div></div><div class="page" itemscope itemtype="http://schema.org/CreativeWork"><article><p>测试</p>
+-<p>1234</p>
+-<p>4567</p>
+-</article><article><p>……………..<br>ggf</p>
+-</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Publications"> Publications</a></li><li class="nav_item"><a class="nav-page" href="/"> About</a></li><li class="nav_item"><a class="nav-page" target="_blank" rel="noopener" href="https://blog"> Blog</a></li><li class="nav_item"><a class="nav-page" href="/test/"> TEST</a></li><li class="nav_item"><a class="nav-page" href="/person/"> 个人简历</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><div class="footer_wrap"><div class="copyright">&copy;2020 by null</div><div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow noopener">Academia Theme</a></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
+\ No newline at end of file
++<!DOCTYPE html>
++<html lang="zh-CN">
++<head>
++  <meta charset="UTF-8" />
++  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++  <title>鹿安东 | 个人主页</title>
++  <meta name="description" content="鹿安东的个人主页：研究方向、项目、技能与联系方式。" />
++  <link rel="stylesheet" href="style.css" />
++</head>
++<body>
++  <header class="topbar">
++    <div class="container nav-wrap">
++      <a class="brand" href="#about">鹿安东</a>
++      <button class="menu-btn" id="menuBtn" aria-label="切换导航">☰</button>
++      <nav id="nav" class="nav">
++        <a href="#about">About</a>
++        <a href="#projects">Projects</a>
++        <a href="#skills">Skills</a>
++        <a href="#contact">Contact</a>
++      </nav>
++    </div>
++  </header>
++
++  <main>
++    <section id="about" class="section hero reveal">
++      <div class="container card">
++        <h1>你好，我是鹿安东</h1>
++        <p>我主要关注多模态目标跟踪、跨模态搜索与计算机视觉。这个页面用于展示我的研究兴趣、项目与联系方式。</p>
++        <div class="actions">
++          <a class="btn primary" href="https://scholar.google.com/citations?user=ll-o6z0AAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
++          <a class="btn" href="https://cs.ahu.edu.cn/2025/0626/c20807a369698/page.htm" target="_blank" rel="noopener">院系主页</a>
++        </div>
++      </div>
++    </section>
++
++    <section id="projects" class="section reveal">
++      <div class="container">
++        <h2>Projects</h2>
++        <div class="grid">
++          <article class="card project-card">
++            <h3>多模态目标跟踪</h3>
++            <p>探索 RGB-T 等多源信息融合，提升复杂场景下目标跟踪的鲁棒性。</p>
++          </article>
++          <article class="card project-card">
++            <h3>跨模态搜索</h3>
++            <p>研究视觉与文本之间的表示对齐与检索匹配，优化搜索准确率。</p>
++          </article>
++          <article class="card project-card">
++            <h3>视觉表征学习</h3>
++            <p>通过高质量特征学习增强下游识别、匹配与理解任务性能。</p>
++          </article>
++        </div>
++      </div>
++    </section>
++
++    <section id="skills" class="section reveal">
++      <div class="container">
++        <h2>Skills</h2>
++        <div class="grid skills-grid">
++          <div class="card"><h3>研究方向</h3><p>多模态感知、目标跟踪、跨模态检索</p></div>
++          <div class="card"><h3>技术能力</h3><p>Python、深度学习、计算机视觉实验设计</p></div>
++          <div class="card"><h3>学术能力</h3><p>论文写作、文献调研、算法复现与对比分析</p></div>
++        </div>
++      </div>
++    </section>
++
++    <section id="contact" class="section reveal">
++      <div class="container card">
++        <h2>Contact</h2>
++        <p>欢迎交流合作：</p>
++        <ul>
++          <li>单位：安徽大学计算机科学与技术学院</li>
++          <li>邮箱：请替换为你的常用邮箱</li>
++          <li>简历：<a href="/attaches/CV.pdf" target="_blank" rel="noopener">点击查看 PDF</a></li>
++        </ul>
++      </div>
++    </section>
++  </main>
++
++  <footer class="footer">
++    <div class="container">© 2026 鹿安东 · Built with HTML/CSS/JS</div>
++  </footer>
++
++  <script src="script.js"></script>
++</body>
++</html>
