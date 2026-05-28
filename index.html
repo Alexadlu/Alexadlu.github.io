@@ -17,7 +17,6 @@
         <a href="#about">个人简介</a>
         <a href="#research">研究方向</a>
         <a href="#publications">论文发表</a>
-        <a href="#showcase">成果展示</a>
         <a href="#service">学术服务</a>
         <a href="#contact">联系方式</a>
       </nav>
@@ -44,7 +43,7 @@
           <p class="eyebrow">Academic Homepage</p>
           <h2>个人简介</h2>
           <p>鹿安东，男，博士，安徽大学计算机科学与技术学院副教授。2023 年获得安徽大学计算机科学与技术工学博士学位，博士期间赴中国科学院自动化研究所智能感知计算中心王亮研究员课题组访学交流。2025 年博士后出站，并以绿色通道引进至安徽大学计算机科学与技术学院。</p>
-          <p>主要从事多模态视觉跟踪、高效视觉模型、无人机具身智能等方向的研究工作，已在 IJCV、IEEE TIP、TIFS、TNNLS、IEEE TMM、ACM MM、AAAI 等国际期刊与会议发表20余篇学术论文。主持国家自然科学基金青年项目、博士后面上项目、企业横向项目等科研项目。</p>
+          <p>主要从事多模态视觉跟踪、高效视觉模型、无人机具身智能等方向的研究工作，已在 IJCV、IEEE TIP、TIFS、TNNLS、IEEE TMM、ACM MM、AAAI 等国际期刊与会议发表学术论文。主持国家自然科学基金青年项目、博士后面上项目、企业横向项目等科研项目。</p>
         </section>
       </div>
     </section>
@@ -81,149 +80,121 @@
         </div>
 
         <div class="publication-list">
-          <article class="publication featured">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>AFter: Attention-based Fusion Router for RGBT Tracking <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, W. Wang, C. Li, J. Tang, B. Luo</p>
+          <article class="publication">
+            <div class="publication-media">
+              <div class="model-diagram media-diagram"><span>RGB/TIR Features</span><span>Attention Fusion Router</span><span>Adaptive Fusion Path</span><span>Tracking Prediction</span></div>
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2025</span>
+              <h3>AFter: Attention-based Fusion Router for RGBT Tracking</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Wanyu Wang, Chenglong Li, Jin Tang, Bin Luo</p>
               <p class="venue">IEEE Transactions on Image Processing, 34: 4386-4401, 2025</p>
-              <div class="model-diagram"><span>RGB/TIR Features</span><span>Hierarchical Attention Fusion</span><span>Fusion Router</span><span>Tracking Prediction</span></div>
+              <p class="paper-summary">该工作提出 attention-based fusion router，在不同层级自适应选择 RGB 与热红外信息的融合路径，缓解固定融合结构在复杂场景中的表达受限问题。模型通过路由机制增强跨模态互补性，使 RGBT 跟踪在遮挡、低照度和热干扰等场景下更稳健。</p>
             </div>
           </article>
 
-          <article class="publication featured">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>RGBT Tracking via All-layer Multimodal Interactions with Progressive Fusion Mamba <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, W. Wang, C. Li, J. Tang, B. Luo</p>
+          <article class="publication">
+            <div class="publication-media">
+              <div class="model-diagram media-diagram"><span>Frozen Backbone</span><span>All-layer Interaction</span><span>Progressive Fusion Mamba</span><span>Tracking Head</span></div>
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2025</span>
+              <h3>RGBT Tracking via All-layer Multimodal Interactions with Progressive Fusion Mamba</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Wanyu Wang, Chenglong Li, Jin Tang, Bin Luo</p>
               <p class="venue">AAAI Conference on Artificial Intelligence, 2025</p>
-              <div class="model-diagram"><span>Frozen Backbone</span><span>All-layer Interaction</span><span>Progressive Fusion Mamba</span><span>Tracking Head</span></div>
+              <p class="paper-summary">该工作将多模态交互从单一融合层扩展到全网络层级，并利用 progressive fusion Mamba 建模长程依赖与跨模态动态关系。方法兼顾全局上下文和逐层互补信息，为高性能 RGBT 跟踪提供了更系统的交互范式。</p>
             </div>
           </article>
 
-          <article class="publication featured">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>Duality-Gated Mutual Condition Network for RGBT Tracking <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, C. Qian, C. Li, J. Tang, L. Wang</p>
+          <article class="publication">
+            <div class="publication-media">
+              <img src="assets/dmcnet.jpg" alt="Duality-Gated Mutual Condition Network framework" />
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2025</span>
+              <h3>Duality-Gated Mutual Condition Network for RGBT Tracking</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Cun Qian, Chenglong Li, Jin Tang, Liang Wang</p>
               <p class="venue">IEEE Transactions on Neural Networks and Learning Systems, 36(3), 2025</p>
-              <figure class="paper-figure"><img src="assets/dmcnet.jpg" alt="Duality-Gated Mutual Condition Network framework" /></figure>
+              <p class="paper-summary">该工作针对 RGBT 跟踪中模态质量不稳定的问题，提出 mutual condition 与 duality-gated 机制，使两种模态能够相互约束、相互增强。方法强调低质量模态的可靠利用，而不是简单丢弃或固定加权。</p>
             </div>
           </article>
 
-          <article class="publication featured">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>Modality-missing RGBT Tracking: Invertible Prompt Learning and High-quality Benchmarks <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, C. Li, J. Zhao, J. Tang, B. Luo</p>
+          <article class="publication">
+            <div class="publication-media">
+              <img src="assets/ipl.jpg" alt="Invertible Prompt Learning framework" />
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2025</span>
+              <h3>Modality-missing RGBT Tracking: Invertible Prompt Learning and High-quality Benchmarks</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Chenglong Li, Jinrong Zhao, Jin Tang, Bin Luo</p>
               <p class="venue">International Journal of Computer Vision, 133: 2599-2619, 2025</p>
-              <figure class="paper-figure"><img src="assets/ipl.jpg" alt="Invertible Prompt Learning framework" /></figure>
+              <p class="paper-summary">该工作面向真实场景中常见的模态缺失问题，提出可逆提示学习框架，在缺失模态条件下恢复有效跨模态提示，并构建高质量评测基准。其价值在于把 RGBT 跟踪从理想双模态输入推进到更贴近真实部署的鲁棒感知设置。</p>
             </div>
           </article>
 
           <article class="publication">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>Nighttime Person Re-identification via Collaborative Enhancement Network with Multi-domain Learning <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, C. Li, T. Zha, X. Wang, J. Tang, B. Luo</p>
+            <div class="publication-media">
+              <div class="model-diagram media-diagram"><span>Nighttime Images</span><span>Collaborative Enhancement</span><span>ReID Learning</span><span>Multi-domain Alignment</span></div>
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2025</span>
+              <h3>Nighttime Person Re-identification via Collaborative Enhancement Network with Multi-domain Learning</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Chenglong Li, Tengfei Zha, Xingyu Wang, Jin Tang, Bin Luo</p>
               <p class="venue">IEEE Transactions on Information Forensics and Security, 20: 1305-1319, 2025</p>
-              <div class="model-diagram"><span>Nighttime Images</span><span>Collaborative Enhancement</span><span>ReID Learning</span><span>Multi-domain Alignment</span></div>
+              <p class="paper-summary">该工作面向夜间行人重识别中的照明退化和域偏移问题，设计协同增强网络，将图像增强与 ReID 表征学习联合优化。多域学习机制提升了模型跨夜间场景泛化能力，为低照度安全感知提供了有效方案。</p>
             </div>
           </article>
 
           <article class="publication">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>BR-MoE: Blind Multi-Modal Tracking with Route-Dynamic Mixture of Experts <span class="paper-tag">Corresponding Author</span></h3>
-              <p class="authors">Q. Meng, <strong>A. Lu</strong>, Z. Jin</p>
+            <div class="publication-media">
+              <img src="assets/brmoe.jpg" alt="BR-MoE route-dynamic mixture of experts framework" />
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2025</span>
+              <h3>BR-MoE: Blind Multi-Modal Tracking with Route-Dynamic Mixture of Experts</h3>
+              <p class="authors">Qingguo Meng, <strong>Andong Lu</strong>, Zhe Jin</p>
               <p class="venue">IEEE Transactions on Circuits and Systems for Video Technology, 35(12), 2025</p>
-              <figure class="paper-figure"><img src="assets/brmoe.jpg" alt="BR-MoE route-dynamic mixture of experts framework" /></figure>
+              <p class="paper-summary">该工作关注盲多模态跟踪中输入模态状态未知的问题，引入 route-dynamic mixture of experts，让模型根据样本状态动态调度专家分支。该设计提升了模型面对模态干扰、缺失或质量波动时的适应能力。</p>
             </div>
           </article>
 
           <article class="publication">
-            <span class="pub-year">2025</span>
-            <div>
-              <h3>Efficient RGBT Tracking via Multi-Path Mamba Fusion Network <span class="paper-tag">Corresponding Author</span></h3>
-              <p class="authors">F. Hong, W. Wang, <strong>A. Lu</strong>, L. Liu, Q. Wang</p>
-              <p class="venue">IEEE Signal Processing Letters, 32, 2025</p>
-              <figure class="paper-figure"><img src="assets/mamba.jpg" alt="Multi-Path Mamba Fusion Network framework" /></figure>
+            <div class="publication-media">
+              <div class="model-diagram media-diagram"><span>Visible/Thermal Branches</span><span>Coupled Teacher</span><span>Knowledge Distillation</span><span>Gap Reduction</span></div>
             </div>
-          </article>
-
-          <article class="publication">
-            <span class="pub-year">2024</span>
-            <div>
-              <h3>Breaking Modality Gap in RGBT Tracking: Coupled Knowledge Distillation <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, J. Zhao, C. Li, Y. Xiao, B. Luo</p>
+            <div class="publication-content">
+              <span class="pub-year">2024</span>
+              <h3>Breaking Modality Gap in RGBT Tracking: Coupled Knowledge Distillation</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Jinrong Zhao, Chenglong Li, Yun Xiao, Bin Luo</p>
               <p class="venue">ACM International Conference on Multimedia, 9291-9300, 2024</p>
-              <div class="model-diagram"><span>Visible/Thermal Branches</span><span>Coupled Teacher</span><span>Knowledge Distillation</span><span>Gap Reduction</span></div>
+              <p class="paper-summary">该工作从知识蒸馏角度解决 RGB 与热红外之间的模态鸿沟，设计耦合蒸馏机制同时传递内容知识与模态互补知识。方法帮助跟踪器学习更一致、更判别的跨模态表征，提升复杂场景下的跟踪可靠性。</p>
             </div>
           </article>
 
           <article class="publication">
-            <span class="pub-year">2024</span>
-            <div>
-              <h3>Illumination Distillation Framework for Nighttime Person Re-identification and a New Benchmark <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, Z. Zhang, Y. Huang, Y. Zhang, C. Li, J. Tang, L. Wang</p>
+            <div class="publication-media">
+              <img src="assets/idf.jpg" alt="Illumination Distillation Framework" />
+            </div>
+            <div class="publication-content">
+              <span class="pub-year">2024</span>
+              <h3>Illumination Distillation Framework for Nighttime Person Re-identification and a New Benchmark</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Zhang Zhang, Yan Huang, Yifan Zhang, Chenglong Li, Jin Tang, Liang Wang</p>
               <p class="venue">IEEE Transactions on Multimedia, 26, 2024</p>
-              <figure class="paper-figure"><img src="assets/idf.jpg" alt="Illumination Distillation Framework" /></figure>
+              <p class="paper-summary">该工作提出 illumination distillation framework，将光照相关知识迁移到夜间行人重识别表征中，并构建新的夜间 ReID 基准。该研究提升了低照度条件下身份表征的稳定性，为夜间视觉分析提供了数据和方法支撑。</p>
             </div>
           </article>
 
-          <article class="publication compact">
-            <span class="pub-year">2022</span>
-            <div>
-              <h3>Electrical Thermal Image Semantic Segmentation: Large-Scale Dataset and Baseline <span class="paper-tag">Corresponding Author</span></h3>
-              <p class="authors">F. Wang, Y. Guo, C. Li, <strong>A. Lu</strong>, Z. Ding, J. Tang, B. Luo</p>
-              <p class="venue">IEEE Transactions on Instrumentation and Measurement, 71, 2022</p>
-              <figure class="paper-figure"><img src="assets/etss.jpg" alt="Electrical thermal image semantic segmentation dataset and baseline" /></figure>
+          <article class="publication">
+            <div class="publication-media">
+              <img src="assets/man.jpg" alt="Multi-Adapter Network framework" />
             </div>
-          </article>
-
-          <article class="publication compact">
-            <span class="pub-year">2022</span>
-            <div>
-              <h3>Factory Extraction from Satellite Images: Benchmark and Baseline <span class="paper-tag">Corresponding Author</span></h3>
-              <p class="authors">Y. Deng, C. Li, <strong>A. Lu</strong>, W. Li, B. Luo</p>
-              <p class="venue">Remote Sensing, 14(22): 5657, 2022</p>
-              <figure class="paper-figure"><img src="assets/factory.jpg" alt="Factory extraction from satellite images benchmark and baseline" /></figure>
-            </div>
-          </article>
-
-          <article class="publication compact">
-            <span class="pub-year">2021</span>
-            <div>
-              <h3>RGBT Tracking via Multi-Adapter Network with Hierarchical Divergence Loss <span class="paper-tag">First Author</span></h3>
-              <p class="authors"><strong>A. Lu</strong>, C. Li, Y. Yan, J. Tang, B. Luo</p>
+            <div class="publication-content">
+              <span class="pub-year">2021</span>
+              <h3>RGBT Tracking via Multi-Adapter Network with Hierarchical Divergence Loss</h3>
+              <p class="authors"><strong>Andong Lu</strong>, Chenglong Li, Yuqing Yan, Jin Tang, Bin Luo</p>
               <p class="venue">IEEE Transactions on Image Processing, 30: 5613-5625, 2021</p>
-              <figure class="paper-figure"><img src="assets/man.jpg" alt="Multi-Adapter Network framework" /></figure>
+              <p class="paper-summary">该工作提出多适配器网络与层级差异约束，在共享表征和模态专属表征之间建立更合理的协同关系。该方法为 RGBT 跟踪中的跨模态特征适配提供了早期且有影响力的解决思路。</p>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tinted" id="showcase">
-      <div class="container">
-        <p class="eyebrow">Research Showcase</p>
-        <h2>成果展示</h2>
-        <div class="showcase-grid">
-          <article class="showcase-card">
-            <img src="assets/brmoe.jpg" alt="BR-MoE framework" />
-            <div><span>2025 · TCSVT</span><h3>BR-MoE</h3><p>面向盲多模态跟踪的 route-dynamic mixture of experts 框架。</p></div>
-          </article>
-          <article class="showcase-card">
-            <img src="assets/dmcnet.jpg" alt="DMCNet framework" />
-            <div><span>2025 · TNNLS</span><h3>DMCNet</h3><p>通过 duality-gated mutual condition 建模低质量模态下的 RGBT 跟踪。</p></div>
-          </article>
-          <article class="showcase-card">
-            <img src="assets/mamba.jpg" alt="Multi-Path Mamba framework" />
-            <div><span>2025 · SPL</span><h3>Multi-Path Mamba</h3><p>面向高效 RGBT 跟踪的多路径 Mamba 融合网络。</p></div>
-          </article>
-          <article class="showcase-card">
-            <img src="assets/ipl.jpg" alt="Invertible Prompt Learning framework" />
-            <div><span>2025 · IJCV</span><h3>Invertible Prompt Learning</h3><p>面向模态缺失 RGBT 跟踪的可逆提示学习与高质量基准。</p></div>
           </article>
         </div>
       </div>
