@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Task-driven Pixel-level Fusion tracker framework</title>
+  <desc id="desc">A compact diagram showing RGB and thermal inputs, a pixel-level fusion adapter, heterogeneous expert distillation, decoupled representation learning, and tracking output.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#153f63" />
+    </marker>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#eef3f6" />
+    </linearGradient>
+    <style>
+      .bg { fill: #fbfcfd; }
+      .frame { fill: #ffffff; stroke: #d8e0e7; stroke-width: 2; }
+      .soft { fill: url(#panel); stroke: #cbd7e2; stroke-width: 2; }
+      .blue { fill: #153f63; }
+      .gold { fill: #9d6b28; }
+      .green { fill: #23715f; }
+      .muted { fill: #607080; }
+      .title { font: 700 28px Arial, sans-serif; fill: #0c273f; }
+      .label { font: 700 18px Arial, sans-serif; fill: #0c273f; }
+      .small { font: 600 14px Arial, sans-serif; fill: #607080; }
+      .tiny { font: 600 12px Arial, sans-serif; fill: #607080; }
+      .white { fill: #ffffff; }
+      .arrow { stroke: #153f63; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #9d6b28; stroke-width: 3; stroke-dasharray: 8 7; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="760" height="430" rx="18" />
+  <rect class="frame" x="20" y="20" width="720" height="390" rx="16" />
+  <text class="title" x="48" y="62">Task-driven Pixel-level Fusion Tracker</text>
+  <text class="small" x="50" y="88">Pixel-level RGBT fusion with expert distillation and decoupled representation learning</text>
+
+  <g transform="translate(48 128)">
+    <rect class="soft" x="0" y="0" width="146" height="68" rx="10" />
+    <rect class="blue" x="16" y="16" width="46" height="36" rx="6" opacity="0.9" />
+    <rect class="gold" x="48" y="16" width="46" height="36" rx="6" opacity="0.9" />
+    <text class="label" x="82" y="30">RGB</text>
+    <text class="small" x="82" y="50">visible frame</text>
+  </g>
+
+  <g transform="translate(48 224)">
+    <rect class="soft" x="0" y="0" width="146" height="68" rx="10" />
+    <rect class="gold" x="18" y="16" width="70" height="36" rx="18" opacity="0.92" />
+    <text class="label" x="82" y="30">Thermal</text>
+    <text class="small" x="82" y="50">infrared frame</text>
+  </g>
+
+  <line class="arrow" x1="204" y1="162" x2="267" y2="190" />
+  <line class="arrow" x1="204" y1="258" x2="267" y2="230" />
+
+  <g transform="translate(274 154)">
+    <rect class="frame" x="0" y="0" width="186" height="126" rx="14" />
+    <text class="label" x="24" y="34">Pixel-level</text>
+    <text class="label" x="24" y="58">Fusion Adapter</text>
+    <text class="small" x="24" y="86">Mamba-based early fusion</text>
+    <text class="tiny" x="24" y="108">only 14.3KB extra parameters</text>
+  </g>
+
+  <line class="arrow" x1="462" y1="217" x2="542" y2="217" />
+
+  <g transform="translate(544 154)">
+    <rect class="soft" x="0" y="0" width="154" height="126" rx="14" />
+    <text class="label" x="24" y="36">Tracking</text>
+    <text class="label" x="24" y="60">Backbone</text>
+    <rect class="blue" x="24" y="82" width="106" height="18" rx="9" opacity="0.82" />
+    <rect class="gold" x="24" y="106" width="76" height="10" rx="5" opacity="0.86" />
+  </g>
+
+  <line class="dash" x1="356" y1="142" x2="356" y2="104" />
+  <g transform="translate(230 104)">
+    <rect class="soft" x="0" y="-42" width="252" height="52" rx="12" />
+    <text class="small" x="22" y="-20">Heterogeneous multi-expert</text>
+    <text class="small" x="22" y="0">distillation guides fusion</text>
+  </g>
+
+  <line class="dash" x1="356" y1="288" x2="356" y2="334" />
+  <g transform="translate(230 342)">
+    <rect class="soft" x="0" y="-42" width="252" height="58" rx="12" />
+    <text class="small" x="22" y="-19">Decoupled representation learning</text>
+    <text class="small" x="22" y="2">tracking + reconstruction signals</text>
+  </g>
+
+  <g transform="translate(596 304)">
+    <rect class="frame" x="0" y="0" width="102" height="58" rx="12" />
+    <circle class="green" cx="30" cy="29" r="16" opacity="0.88" />
+    <circle class="gold" cx="30" cy="29" r="7" opacity="0.95" />
+    <text class="small" x="56" y="25">response</text>
+    <text class="small" x="56" y="43">map</text>
+  </g>
+  <line class="arrow" x1="622" y1="280" x2="632" y2="304" />
+
+  <g transform="translate(62 338)">
+    <rect class="soft" x="0" y="0" width="122" height="42" rx="10" />
+    <text class="tiny" x="16" y="18">nearest-neighbor</text>
+    <text class="tiny" x="16" y="34">template update</text>
+  </g>
+  <path class="dash" d="M184 360 C242 382, 520 386, 594 342" />
+</svg>
