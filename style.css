@@ -301,6 +301,39 @@ h3 {
   background: #ffffff;
 }
 
+.publication-media.paper-preview {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  padding: 26px;
+  background: #fbfcfd;
+}
+
+.paper-preview .preview-kicker {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.paper-preview strong {
+  color: var(--dark);
+  font-size: 1.32rem;
+  line-height: 1.25;
+}
+
+.paper-preview small {
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.paper-preview a {
+  font-weight: 750;
+  word-break: break-word;
+}
+
 .paper-tag {
   display: inline-block;
   margin-left: 8px;
