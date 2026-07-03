@@ -46,25 +46,3 @@ if ('IntersectionObserver' in window) {
   revealTargets.forEach((target) => target.classList.add('visible'));
 }
 
-const firstPaperFigure = document.querySelector('.publication-list .publication.paper-card:first-child .publication-media img');
-
-if (firstPaperFigure) {
-  const figureParts = Array.from(
-    { length: 12 },
-    (_, index) => `assets/tpf-framework-20260702.part${index}.txt?v=20260702`
-  );
-
-  Promise.all(
-    figureParts.map((src) =>
-      fetch(src, { cache: 'force-cache' }).then((response) => {
-        if (!response.ok) throw new Error(`Unable to load ${src}`);
-        return response.text();
-      })
-    )
-  )
-    .then((parts) => {
-      firstPaperFigure.removeAttribute('srcset');
-      firstPaperFigure.src = `data:image/jpeg;base64,${parts.join('').trim()}`;
-    })
-    .catch(() => {});
-}
